@@ -1,56 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
 import './App.css';
+import FrontPage from '../src/features/menu';
+import About from './features/about';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Orders from './features/orders';
+import Authentication from './features/createAccount';
+import Login from './features/login';
+import Medias from './features/Medias';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Medias />} path="/" />
+          <Route element={<About />} path="/about" />
+          <Route element={<FrontPage />} path="/treats" />
+          <Route element={<Orders />} path="/order" />
+          <Route element={<Authentication />} path="/create-account"></Route>
+          <Route element={<Login />} path="/login" />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
