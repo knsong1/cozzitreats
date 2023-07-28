@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import FrontPage from '../src/features/menu';
+import FrontPage from './features/menu';
 import About from './features/about';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Orders from './features/orders';

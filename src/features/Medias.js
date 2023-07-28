@@ -35,6 +35,18 @@ function Medias() {
         </h2>
         <ul className="image-gallery">
           <li>
+            <img src={lemoncookie} alt="" />
+            <div className="overlay">
+              <span>Lemon Loaf 1ct</span>
+            </div>
+          </li>
+          <li>
+            <img src={swirlcake} alt="" />
+            <div className="overlay">
+              <span>Apple Cider Doughnut Cake Medium/Large</span>
+            </div>
+          </li>
+          <li>
             <img className="imgSrc" src={packaged} alt="" />
             <div className="overlay">
               <span>Chocolate Overload Blondie 4ct</span>
@@ -59,18 +71,6 @@ function Medias() {
             <img src={buttercookies} alt="" />
             <div className="overlay">
               <span>Butter Cookies </span>
-            </div>
-          </li>
-          <li>
-            <img src={swirlcake} alt="" />
-            <div className="overlay">
-              <span>Apple Cider Doughnut Cake Medium/Large</span>
-            </div>
-          </li>
-          <li>
-            <img src={lemoncookie} alt="" />
-            <div className="overlay">
-              <span>Lemon Loaf 1ct</span>
             </div>
           </li>
 
